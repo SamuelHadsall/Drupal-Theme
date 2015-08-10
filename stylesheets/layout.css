@@ -1,0 +1,946 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css);
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+/*================
+	  Global
+==================*/
+* {
+margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+.footer, .push {
+min-height: 4em;
+}
+figure, figcaption {
+	position: relative;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+hr {
+	background-image: -moz-linear-gradient(left center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	border: 0 none;
+	height: 1px;
+	margin: 8px 0;
+}
+body {
+	background: url(../assets/images/siteBG.gif) repeat 0 0;
+	font: 12px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: #333333;
+	background-position: initial initial;
+	background-repeat: initial initial;
+	border-bottom-color: #FFFFFF;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	-webkit-box-shadow: 0px 2px 12px 3px #000000;
+	-moz-box-shadow: 0px 2px 12px 3px #000000;
+	box-shadow: 0px 2px 12px 3px #000000;
+	height: 46px;
+	padding: 0;
+	position: relative;
+	top: 0;
+	z-index: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+strong {
+	font-weight: 800;
+}
+h4 {
+	font-size: 18px;
+}
+canvas#map_canvas {
+	position: relative;
+	width: 680px;
+}
+.strong {
+	font-weight: bold
+}
+.alignright {
+	float: right
+}
+header .email p, header .phone p, .social p, header .tagline>h2, .user-login p {
+	margin: 0;
+}
+#sidebar_first, #main {
+	background: #FFFFFF;
+}
+#sidebar_first{
+	min-height:547px;
+}
+.sidebar, .main {
+	padding: 20px 5px;
+}
+ul ul, ul ol, ol ol, ol ul {
+	font-size: 100%;
+	margin: 4px 0 5px 30px;
+}
+img[alt="116 Extended Arm"], img[alt="316-extended-arm"], img[alt="316-tj-drop-plate"], img[alt="416 Extended Arm"], img[alt="416 Extra Long Extended Arm"] {
+	bottom: 0 !important;
+}
+#logo{
+	margin:0 0 10px;
+}
+#mobil{
+	display:none;
+}
+/*==================================
+		Header Styles
+====================================*/
+.tagline {
+	background: none repeat scroll 0 0 #FFFFFF;
+	height: 46px;
+}
+.tagline h2 > em {
+	font-size: 13px;
+	margin: 0;
+	padding: 5px;
+	font-weight: normal;
+}
+.email, .phone, .user-login {
+	padding: 10px 0 0;
+}
+.social p > a, .social p > a:hover, .user-login p > a:hover, .user-login p > a:hover {
+	text-decoration: none !important
+}
+.email p em, .phone p em, .user-login p a {
+	color: #FFFFFF;
+	padding: 0 10px;
+	font-size: 1.4em;
+}
+.email h2, .phone h2, .user-login h2{
+	display:none;
+}
+.user-login ul.menu{
+	float:right;
+	margin:0;
+}
+.user-login ul.menu li{
+	display:inline;
+	float:left;
+}
+.user-login ul.menu li a{
+	color:#FFFFFF;
+	font-size:1em;
+	padding:0;
+}
+.user-login a{
+	color: #FFFFFF;
+    font-size: 1.4em;
+    padding: 0 10px;
+}
+.user-login a.fancybox{
+	cursor:pointer;
+}
+.email .fa-envelope, .phone .fa-phone, .user-login .fa-user {
+	color: #FFFFFF;
+}
+
+/*==================================
+		Sidebar 
+===================================*/
+/* Newsletter Form popup */
+
+.txt {
+	display: block !important;
+	color: #676767 !important;
+	margin-bottom: 10px !important;
+	border: 1px dotted #ccc !important;
+	padding: 5px 9px !important;
+	font-size: 1.2em !important;
+	line-height: 1.4em !important;
+	width: 500px !important;
+}
+.txt:focus {
+	border-style: solid !important;
+	border-color: #bababa !important;
+	color: #444 !important;
+}
+input.error {
+	border-color: #973d3d !important;
+	border-style: solid !important;
+	background: #f0bebe !important;
+	color: #a35959 !important;
+}
+input.error:focus {
+	border-color: #973d3d !important;
+	color: #a35959 !important;
+}
+#send {
+	color: #dee5f0;
+	display: block;
+	cursor: pointer;
+	padding: 5px 11px;
+	font-size: 1.2em;
+	border: solid 1px #224983;
+	border-radius: 5px;
+	background: #1e4c99;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2f52b7), to(#0e3a7d));
+	background: -moz-linear-gradient(top, #2f52b7, #0e3a7d);
+	background: -webkit-linear-gradient(top, #2f52b7, #0e3a7d);
+	background: -o-linear-gradient(top, #2f52b7, #0e3a7d);
+	background: -ms-linear-gradient(top, #2f52b7, #0e3a7d);
+	background: linear-gradient(top, #2f52b7, #0e3a7d);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f52b7', endColorstr='#0e3a7d');
+}
+#send:hover {
+	background: #183d80;
+	background: -webkit-gradient(linear, left top, left bottom, from(#284f9d), to(#0c2b6b));
+	background: -moz-linear-gradient(top, #284f9d, #0c2b6b);
+	background: -webkit-linear-gradient(top, #284f9d, #0c2b6b);
+	background: -o-linear-gradient(top, #284f9d, #0c2b6b);
+	background: -ms-linear-gradient(top, #284f9d, #0c2b6b);
+	background: linear-gradient(top, #284f9d, #0c2b6b);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#284f9d', endColorstr='#0c2b6b');
+}
+#send:active {
+	color: #8c9dc0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#0e387d), to(#2f55b7));
+	background: -moz-linear-gradient(top, #0e387d, #2f55b7);
+	background: -webkit-linear-gradient(top, #0e387d, #2f55b7);
+	background: -o-linear-gradient(top, #0e387d, #2f55b7);
+	background: -ms-linear-gradient(top, #0e387d, #2f55b7);
+	background: linear-gradient(top, #0e387d, #2f55b7);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e387d', endColorstr='#2f55b7');
+}
+.callToAction {
+	height: 105px;
+	margin: 10px 0;
+}
+.callToAction a {
+	background: url(../images/callToAction.png) no-repeat scroll 0 -105px transparent;
+	display: block;
+	width: 210px;
+	text-decoration: none;
+	text-indent: -99999px;
+}
+.callToAction a:link {
+	background: url(../images/callToAction.png) no-repeat scroll 0 -105px transparent;
+	display: block;
+	height: 105px;
+}
+.callToAction a:visited {
+	background: url(../images/callToAction.png) no-repeat scroll 0 -105px transparent;
+	display: block;
+	height: 105px;
+}
+.callToAction a:hover {
+	background: url(../images/callToAction.png) no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 105px;
+}
+.callToAction a:focus {
+	background: url(../images/callToAction.png) no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 105px;
+	text-decoration: none;
+}
+.callToAction a:active {
+	background: url(../images/callToAction.png) no-repeat scroll 0 0 transparent;
+	display: block;
+	height: 105px;
+}
+/* Accordion */
+#accordion, #accordion ul, #acordion li, #accordion a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 1;
+	font-size: 14px;
+	position: relative;
+}
+#accordion a {
+	line-height: 1.3;
+}
+#accordion {
+	width: 210px;
+}
+#accordion li {
+	margin: 0;
+	text-align: left;
+}
+#accordion > ul > li > a {
+	font-size: 25px;
+	font-weight: bold;
+	display: block;
+	background: #333;
+	color: #ffffff;
+	border-bottom: 1px solid #FFF;
+	text-transform: uppercase;
+	position: relative;
+}
+#accordion > ul > li > a > span {
+	background: #333;
+	padding: 10px;
+	display: block;
+	font-size: 13px;
+	font-weight: 300;
+}
+#accordion > ul > li > a:hover {
+	text-decoration: none;
+}
+#accordion > ul > li.active {
+	border-bottom: none;
+}
+#accordion > ul > li.active > a {
+	color: #fff;
+}
+#accordion > ul > li.active > a span, #accordion > ul > li.active > a {
+	background: #4D6B81;
+}
+#accordion > ul > li.has-sub > a span {
+	background: url(../assets/images/menu_images/icon_plus.png) 96% center no-repeat;
+}
+#accordion > ul > li.has-sub.active > a span {
+	background: url(../assets/images/menu_images/icon_minus.png) 96% center no-repeat;
+}
+/* Sub menu */
+#accordion ul ul {
+	display: none;
+	background: #fff;
+	border-right: 1px solid #a2a194;
+	border-left: 1px solid #a2a194;
+}
+#accordion ul ul li {
+	padding: 0;
+	border-bottom: 1px solid #d4d4d4;
+	border-top: none;
+	background: #f7f7f7;
+	background: -moz-linear-gradient(#f7f7f7 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ececec));
+	background: -webkit-linear-gradient(#f7f7f7 0%, #ececec 100%);
+	background: linear-gradient(#f7f7f7 0%, #ececec 100%);
+}
+#accordion ul ul li:last-child {
+	border-bottom: none;
+}
+#accordion ul ul a {
+	padding: 10px 10px 10px 25px;
+	display: block;
+	color: #676767;
+	font-size: .8em;
+	font-weight: normal;
+}
+#accordion ul ul a:before {
+	content: '\00BB';
+	position: absolute;
+	left: 10px;
+	color: #e94f31;
+}
+#accordion ul ul a:hover {
+	color: #e94f31;
+}
+.askbill {
+	height: 78px;
+	margin: 0 0 10px;
+	overflow: hidden;
+	width: 100%;
+}
+.askbill img.offline {
+	position: relative;
+	top: -78px;
+}
+/*=================================
+			Footer
+================================*/ 
+footer {
+	background-color: #333333;
+	background-position: initial initial;
+	background-repeat: initial initial;
+	border-top-color: #FFFFFF;
+	border-top-style: solid;
+	border-top-width: 1px;
+	-webkit-box-shadow: 0px 2px 12px 3px #000000;
+	-moz-box-shadow: 0px 2px 12px 3px #000000;
+	box-shadow: 0px 2px 12px 3px #000000;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+footer div.center {
+	text-align: center
+}
+footer ul.menu {
+	margin: 15px 0;
+	text-align:center;
+}
+footer ul.menu li {
+	display: inline;
+	padding: 10px;
+	text-align: center;
+}
+footer ul.menu li a {
+	color: #FFFFFF;
+}
+footer .email, footer .phone {
+	display: none
+}
+footer, .copyright strong, .copyright, .sitemap_link a, .login_link a {
+	color: #FFFFFF;
+}
+
+/* #Page Style
+================================================== */
+/* Home Page */
+.bx-wrapper .bx-viewport {
+	box-shadow: none;
+	border: none
+}
+.slider {
+	background: url("../assets/images/slider/bg-shadow.png") no-repeat scroll center 5px rgba(0, 0, 0, 0);
+	height: 158px;
+}
+/* Templates Page */
+#templates ul ul, #spec-sheets ul ul {
+	display: none;
+}
+#templates ul ul ul, #spec-sheets ul ul ul {
+	display: block;
+}
+.protected, .protected:hover, .ptrotect:focus {
+	opacity: 0.2;
+}
+.productDisplay {
+	height: 45px;
+	margin: 5px 0 10px;
+	border: 1px solid #e4e4e4;
+	background: url(../assets/images/backgrounds/productDisplayBG.jpg) no-repeat top left;
+	padding: 10px 30px 10px 20px;
+	font-size: 1.8em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative
+}
+.productDisplay img {
+	right: 0;
+	bottom: -35px;
+	position: absolute;
+	display: inline;
+	width: 237px;
+	height: auto;
+}
+.productDisplay i {
+	float: right;
+}
+.productDisplay .moreDetails p {
+	font-style: italic;
+	bottom: 15px;
+	float: left;
+	font-size: 0.6em;
+	position: relative;
+	margin: 20px 0 0;
+}
+.productDisplay .moreDetails p:after {
+	content: '\00BB';
+	padding-left: 10px;
+}
+.moreDetails {
+	font-style: italic;
+}
+.imageDescription {
+	background: none repeat scroll 0 0 #333333;
+	line-height: 20px;
+	opacity: 0.8;
+	position: absolute;
+	bottom: 0;
+	width: 198px;
+}
+.Description {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+/* Product Details */
+.file-icon{
+	float:left;
+}
+/* Contact, Contact Rep Pages */
+#mobile_Rep_Map{
+	display:none;
+}
+
+.repinfo {
+	background-color: #F9F9F9;
+	border: 1px solid #CCCCCC;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-bottom: 20px;
+	padding: 15px;
+	width: 210px;
+}
+.repinfo li {
+	list-style: none outside;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+.repinfo img {
+	background-color: #FFFFFF;
+	border: 3px solid #999999;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	height: 200px;
+	width: 200px;
+}
+/* Rep list */
+.replist {
+	background-color: #F9F9F9;
+	border: 1px solid #CCCCCC;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-bottom: 20px;
+	margin-left: 4px;
+	margin-right: 4px;
+	padding: 15px;
+}
+.replist:hover{
+	box-shadow: 0 0 5px #777777 inset;
+}
+.replist h3 {
+	font-size: 2em;
+}
+.replist h4 {
+	font-size: 1.4em;
+}
+.replist li {
+	list-style: none outside;
+	font-weight: bold;
+	text-align: left;
+	margin: 0;
+	padding: 2px 0 0;
+	word-wrap: break-word;
+	float: left
+}
+.replist li.icon {
+	display: inline;
+	padding: 0 5px 0 0
+}
+.replist li a {
+	font-size: 10px;
+}
+.replist img {
+	background-color: #FFFFFF;
+	border: 3px solid #999999;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	height: 184px;
+	width: 184px;
+}
+.internationl_maps img {
+	display:inline;
+}
+
+/* Product Display Page */
+
+.boxes {
+	background-color: #F9F9F9;
+	border: 1px solid #CCCCCC;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-bottom: 20px;
+	padding: 5px;
+	text-align: justify;
+	position: relative;
+}
+.boxes li {
+	list-style: none outside;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+.boxes img {
+	position: relative;
+	right: 55px;
+	width:300px;
+	height:auto;
+}
+.boxes figure {
+	border: 3px solid #999999;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin: 0 auto;
+	height: 250px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+/* Hover for boxes */
+.boxes .hover-content-box-overlay {
+	background: none repeat scroll 0 0 #000;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	opacity: 0.8;
+}
+.boxes .hover-content-copy-txt {
+	padding-top: 50%;
+	text-align: center;
+}
+.boxes .hover-content-copy-txt a {
+	color: #FFFFFF !important;
+}
+.boxes .ho-box {
+	position: relative;
+}
+.hvr-box .overlay {
+	background: rgba(0,0,0,.75);
+	display: table-cell;
+	padding: 45px 0 66px 0;
+	height: 150px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+.hvr-box .overlay p {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 150px;       /* the same as your div height */
+	color: #FFFFFF;
+}
+.hvr-box .overlay a {
+	color: #FFFFFF;
+}
+.hvr-box .overlay:hover {
+	opacity: 1;
+}
+a.fancybox {
+	cursor: zoom-in;
+}
+/* PCC Results */
+.results {
+	margin: 0 0 20px;
+}
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.tagline h2 > em {
+	font-size: 10px;
+}
+.email p em, .phone p em {
+	font-size: 1em;
+}
+.phone > p i {
+	margin: 0 0 0 -20px;
+}
+nav.user-login #login-trigger,  nav.user-login #signup-trigger {
+	font-size: 10px;
+}
+.callToAction a {
+	width: 100%;
+	height: 105px
+}
+.sf-vertical {
+	width: 100%
+}
+#accordion {
+	width: 163px;
+}
+#accordion > ul > li > a > span {
+	font-size: 11px;
+}
+h2 {
+	font-size: 2.5em;
+}
+h5 {
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: bold;
+}
+#bgmp_map-canvas {
+	height: 450px !important;
+	width: 545px !important;
+}
+.dktp-oly {
+	display: none
+}
+#mobile_Rep_Map{
+	display: block;
+}
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+header {
+	height: 110px;
+}
+
+.contact-map {
+	width: 100% !important;
+	height: auto !important;
+}
+#header {
+	display: none
+}
+#mobil-header {
+	display: block;
+	padding: 40px 0 0;
+}
+.bx-wrapper .bx-controls-direction a {
+	z-index: 0 !important;
+}
+.slider {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	height: auto;
+}
+.responsive-tabs {
+	width: 100%;
+}
+.dktp-oly {
+	display: none
+}
+.tagline {
+	background: none;
+	color: #FFFFFF;
+	height: 46px;
+}
+.tagline h2 em {
+	font-size: 15px;
+}
+.tagline h2,  .tagline a:link,  .tagline a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.tagline .fa-list {
+	float: left;
+	position: relative;
+	bottom: -12px;
+	margin: 0 10px 0 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 18px;
+	white-space: normal;
+}
+aside img {
+	width: 100% !important;
+	height: auto !important;
+}
+.callToAction {
+	display: none
+}
+#mobile_Rep_Map{
+	display: block;
+}
+#sidebar_first{
+	min-height: inherit;
+}
+#mobil{
+	display: block;
+}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+header {
+	border-top: 0 solid #333333 !important;
+}
+.boxes, .replist, .repinfo {
+	width: 370px;
+}
+.responsive-tabs-wrapper {
+	width: 410px;
+}
+.productDisplay img {
+	height: auto !important;
+	right: -50px;
+	width: 47.66% !important;
+}
+#bgmp_map-canvas {
+	height: 250px !important;
+	width: 410px !important;
+}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+#outer {
+	margin: 0 !important
+}
+/*header {
+	border-top: 0px solid #333333 !important;
+	height: 80px;
+}
+*/
+
+.boxes {
+	width: 278px;
+}
+.replist, .repinfo {
+	width: 250px;
+}
+.productDisplay {
+	width: auto;
+	font-size: 1.2em;
+}
+.productDisplay img {
+	height: auto !important;
+	top: 0;
+	right: -50px;
+	width: 47.66% !important;
+}
+.productDisplay .productAbstract {
+	white-space: pre-wrap;
+}
+.responsive-tabs-wrapper {
+	width: 292px;
+}
+.email, .phone, .user-login {
+	color: #FFFFFF;
+}
+#bgmp_map-canvas {
+	height: 250px !important;
+	width: 292px !important;
+}
+.askbill {
+	height: 98px;
+	margin: 0 0 10px;
+	overflow: hidden;
+	width: 100%;
+}
+.askbill img.offline {
+	position: relative;
+	top: -78px;
+}
+}
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+
+/*=====================================
+		    And Stay Down
+       Keep Footer at bottom of screen
+======================================*/
+#outer {
+	margin: auto;
+	min-height: 100%;
+	margin-top: -40px;/*footer height - this drags the outer 40px up through the top of the monitor */
+	text-align: left;
+	clear: both;
+}
+* html #outer {
+	height: 100%
+}
+/*header {
+	border-top: 40px solid #fff;  soak up negative margin and allows header to start at top of page
+}*/
+footer {/* footer now sits at bottom of window*/
+	margin: auto;
+	min-height: 40px;/* must match negative margin of #outer */
+	clear: both;
+}
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+	content: "";
+	height: 100%;
+	float: left;
+	width: 0;
+	margin-top: -32767px;/* thank you Erik J - negate effect of float*/
+}
+#outer:after {/* thank you Erik J - instead of using display table for ie8*/
+	clear: both;
+	display: block;
+	height: 1%;
+	content: " ";
+}
+/* Form valadation */
+.myspecialpurpose {
+	display: none;
+}
+
+/*=========================
+		Misc.
+==========================*/
+.fancybox-lock .fancybox-overlay {
+	z-index: 80000;
+}
+.admin img {
+	margin: 0;
+}
+#downloads h2#speckbook {
+	padding-left: 20px
+}

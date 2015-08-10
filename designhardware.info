@@ -1,0 +1,59 @@
+core = 7.x
+name = Design Hardware
+description = A completely responisive, 16 grid. Drupal compatible theme.
+engine = phptemplate
+
+;Reset styles for theme layout
+stylesheets[all][] = stylesheets/base.css
+;Maine grid layout for responsive framework
+stylesheets[all][] = stylesheets/skeleton.css
+;Superfish navigation
+stylesheets[all][] = stylesheets/superfish/superfish.css
+stylesheets[all][] = stylesheets/superfish/superfish-vertical-dh.css
+;bxSlider
+stylesheets[all][] = stylesheets/bxSlider/jquery.bxslider.css
+;fancybox
+stylesheets[all][] = stylesheets/fancybox/jquery.fancybox.css
+;Responsive Tabs
+stylesheets[all][] = assets/libraries/Easy-Responsive-Tabs/css/easy-responsive-tabs.css
+;Mobilemenu
+stylesheets[all][] = stylesheets/mobilemenu.css
+;Custom css for theme
+stylesheets[all][] = stylesheets/layout.css
+
+;scripts[] = https://maps.googleapis.com/maps/api/js?sensor=false
+;scripts[] = assets/js/scripts/superfish/hoverIntent.js
+scripts[] = assets/js/scripts/superfish/superfish.js
+scripts[] = assets/js/scripts/jquery.hoverOver.min.js
+scripts[] = assets/js/scripts/bxSlider/jquery.bxslider.js
+scripts[] = assets/libraries/Easy-Responsive-Tabs/js/easyResponsiveTabs.js
+scripts[] = assets/js/scripts/fancybox/jquery.fancybox.js
+scripts[] = assets/js/app.js
+
+features[] = logo
+features[] = favicon
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = main_menu
+features[] = secondary_menu
+;features[] = contact_phone
+;features[] = contact_email
+
+regions[page_top] = Page Top
+regions[header] = Header
+regions[contact_phone] = Contact Phone
+regions[contact_email] = Contact Email
+regions[user_logout] = User Loggedout
+regions[user_login] = User Loggedin
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[product_display] = Product Display
+regions[product_show] = Product Show
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar Second
+regions[footer] = Footer
+regions[page_bottom] = Page Bottom

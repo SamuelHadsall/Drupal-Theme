@@ -1,0 +1,33 @@
+; This is a comment. Comments are good. Make frequent use of them.
+core = 7.x
+name = Design Hardware
+description = A completely responisive, 16 grid. Drupal compatible theme.
+engine = phptemplate
+
+stylesheets[all][] = stylesheets/base.css
+stylesheets[all][] = stylesheets/skeleton.css
+stylesheets[all][] = stylesheets/layout.css
+
+features[] = logo
+features[] = favicon
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = main_menu
+features[] = secondary_menu
+features[] = contact_phone
+features[] = contact_email
+
+regions[page_top] = Page Top
+regions[header] = Header
+;regions[contact_phone] = Contact Phone
+;regions[contact_email] = Contact Email
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar Second
+regions[footer] = Footer
+regions[page_bottom] = Page Bottom
